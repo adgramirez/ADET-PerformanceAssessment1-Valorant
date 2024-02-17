@@ -256,10 +256,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .ability-button:hover {
     background-color: #f70d21;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .agent-ability-icon {
