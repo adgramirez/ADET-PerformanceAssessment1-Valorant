@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Assessment #1</title>
+    <link rel="icon" type="image/png" href="resources/misc/valorantLogoRedPositive.png">
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1 class="label">vAlorant Agents</h1>
+        <div class="role-dropdown">
+            <div class="role-dropdown-select" id="roleSelect" onclick="toggleDropdown()">Filter by Role:</div>
+            <div class="role-dropdown-options">
+                <div class="role-dropdown-option" onclick="selectRole('all')">All</div>
+                <div class="role-dropdown-option" onclick="selectRole('controller')">Controller</div>
+                <div class="role-dropdown-option" onclick="selectRole('duelist')">Duelist</div>
+                <div class="role-dropdown-option" onclick="selectRole('sentinel')">Sentinel</div>
+                <div class="role-dropdown-option" onclick="selectRole('initiator')">Initiator</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="agent-cards">
+        <div class="agent-card" onclick="redirectToAgentPage('brimstone')">
+            <img src="resources/brimstone/brimface.webp" alt="Brimstone" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">BRIMSTONE</h2>
+                <div class="role">
+                    <img src="resources/role/controllerLogo.png" alt="Controller Icon" class="role-icon">
+                    <p class="agent-role">Controller</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/brimstone/brimstone-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/brimstone/brimstone-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/brimstone/brimstone-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/brimstone/brimstone-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">01                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('viper')">
+            <img src="resources/viper/viperface.webp" alt="Viper" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">vIPER</h2>
+                <div class="role">
+                    <img src="resources/role/controllerLogo.png" alt="Controller Icon" class="role-icon">
+                    <p class="agent-role">Controller</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/viper/viper-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/viper/viper-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/viper/viper-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/viper/viper-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">02
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('omen')">
+            <img src="resources/omen/omenface.webp" alt="Omen" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">OMEN</h2>
+                <div class="role">
+                    <img src="resources/role/controllerLogo.png" alt="Controller Icon" class="role-icon">
+                    <p class="agent-role">Controller</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/omen/omen-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/omen/omen-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/omen/omen-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/omen/omen-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">03                  
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('killjoy')">
+            <img src="resources/killjoy/killjoyface.webp" alt="Killjoy" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">KILLJOY</h2>
+                <div class="role">
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="role-icon">
+                    <p class="agent-role">Sentinel</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/killjoy/killjoy-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/killjoy/killjoy-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/killjoy/killjoy-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/killjoy/killjoy-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">04         
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('cypher')">
+            <img src="resources/cypher/cypherface.webp" alt="Cypher" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">CYPHER</h2>
+                <div class="role">
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="role-icon">
+                    <p class="agent-role">Sentinel</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/cypher/cypher-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/cypher/cypher-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/cypher/cypher-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/cypher/cypher-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">05
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('sova')">
+            <img src="resources/sova/sovaface.webp" alt="Sova" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">SOvA</h2>
+                <div class="role">
+                    <img src="resources/role/initiatorLogo.png" alt="Initiator Icon" class="role-icon">
+                    <p class="agent-role">Initiator</p>
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/sova/sova-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/sova/sova-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/sova/sova-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/sova/sova-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">06
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('sage')">
+            <img src="resources/sage/sageface.webp" alt="Sage" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">SAGE</h2>
+                <div class="role">
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="role-icon">
+                    <p class="agent-role">Sentinel</p>
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/sage/sage-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/sage/sage-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/sage/sage-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/sage/sage-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">07 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('phoenix')">
+            <img src="resources/phoenix/phoenixface.webp" alt="Phoenix" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">PHOENIX</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/phoenix/phoenix-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/phoenix/phoenix-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/phoenix/phoenix-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/phoenix/phoenix-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">08                    
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('jett')">
+            <img src="resources/jett/jettface.webp" alt="Jett" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">JETT</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/jett/jett-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/jett/jett-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/jett/jett-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/jett/jett-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">09                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('reyna')">
+            <img src="resources/reyna/reynaface.webp" alt="Reyna" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">REYNA</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/reyna/reyna-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/reyna/reyna-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/reyna/reyna-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/reyna/reyna-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">10                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('raze')">
+            <img src="resources/raze/razeface.webp" alt="Raze" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">RAZE</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/raze/raze-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/raze/raze-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/raze/raze-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/raze/raze-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">11                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('breach')">
+            <img src="resources/breach/breachface.webp" alt="Breach" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">BREACH</h2>
+                <div class="role">
+                    <img src="resources/role/initiatorLogo.png" alt="Initiator Icon" class="role-icon">
+                    <p class="agent-role">Initiator</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/breach/breach-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/breach/breach-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/breach/breach-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/breach/breach-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">12                   
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('skye')">
+            <img src="resources/skye/skyeface.webp" alt="Skye" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">SKYE</h2>
+                <div class="role">
+                    <img src="resources/role/initiatorLogo.png" alt="Initiator Icon" class="role-icon">
+                    <p class="agent-role">Initiator</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/skye/skye-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/skye/skye-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/skye/skye-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/skye/skye-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">13                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('yoru')">
+            <img src="resources/yoru/yoruface.webp" alt="Yoru" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">YORU</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/yoru/yoru-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/yoru/yoru-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/yoru/yoru-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/yoru/yoru-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">14                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('astra')">
+            <img src="resources/astra/astraface.webp" alt="Astra" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">OMEN</h2>
+                <div class="role">
+                    <img src="resources/role/controllerLogo.png" alt="Controller Icon" class="role-icon">
+                    <p class="agent-role">Controller</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/astra/astra-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/astra/astra-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/astra/astra-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/astra/astra-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">15                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('kayo')">
+            <img src="resources/kayo/kayoface.webp" alt="Kayo" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">KAY/O</h2>
+                <div class="role">
+                    <img src="resources/role/initiatorLogo.png" alt="Initiator Icon" class="role-icon">
+                    <p class="agent-role">Initiator</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: CYBERNETIC</h2>
+                <div class="abilities">
+                    <img src="resources/kayo/kayo-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/kayo/kayo-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/kayo/kayo-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/kayo/kayo-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">16                 
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('chamber')">
+            <img src="resources/chamber/chamberface.webp" alt="Chamber" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">CHAMBER</h2>
+                <div class="role">
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="role-icon">
+                    <p class="agent-role">Sentinel</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: HUMAN</h2>
+                <div class="abilities">
+                    <img src="resources/chamber/chamber-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/chamber/chamber-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/chamber/chamber-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/chamber/chamber-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">17
+                </p>
+            </div>
+        </div>
+
+        <div class="agent-card" onclick="redirectToAgentPage('neon')">
+            <img src="resources/neon/neonface.webp" alt="Neon" class="agent-image">
+            <div class="agent-info">
+                <h2 class="agent-name">NEON</h2>
+                <div class="role">
+                    <img src="resources/role/duelistLogo.png" alt="Duelist Icon" class="role-icon">
+                    <p class="agent-role">Duelist</p>            
+                </div>
+                <h2 class="agent-class">Agent Class: RADIANT</h2>
+                <div class="abilities">
+                    <img src="resources/neon/neon-ability1.png" alt="Ability 1" class="ability-icon">
+                    <img src="resources/neon/neon-ability2.png" alt="Ability 2" class="ability-icon">
+                    <img src="resources/neon/neon-ability3.png" alt="Ability 3" class="ability-icon">
+                    <img src="resources/neon/neon-abilityUltimate.png" alt="Ultimate" class="ability-icon">
+                </div>
+                <p class="agent-id">
+                    <img src="resources/misc/valorantLogoRed.png" alt="Valorant Logo" class="valorant-logo">18                 
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

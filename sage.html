@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: 魏玲瑩 | Wei Lingying</h2>
+                <h2 class="agent-information-text">Country: China</h2>
+                <h2 class="agent-information-text">Class: Radiant</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive 
+                    fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.
+                    </p>
+                <p class="agent-biography-text">
+                    Sage is a Radiant healer whose capacity to turn the tide of battle is immeasurable. She is also a Geomancer, 
+                    someone with the power to manipulate the Earth. She channels her abilities through a set of crystalline 
+                    Radianite orbs, which she carries on her belt. Using these, Sage is able to create physical structures in 
+                    the world.
+                    </p>
+                <p class="agent-biography-text">Sage has a kind and compassionate personality, considered by some to be 
+                    almost 'mother-like'. While still relatively young, Sage exudes an inner wisdom of someone much older 
+                    and more mature. She genuinely cares about the wellbeing of her allies, and places great emphasis on 
+                    collaboration and team victories over personal glory.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="resources/sage/sageportrait-removebg-preview.png" alt="Sage" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">SAGE</h1>
+                    <p class="agent-portrait-role">Sentinel</p>  
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="resources/sage/sageDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="resources/sage/sage-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/sage/sage-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/sage/sage-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/sage/sage-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

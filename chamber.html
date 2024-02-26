@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: Vincent Fabron</h2>
+                <h2 class="agent-information-text">Country: France</h2>
+                <h2 class="agent-information-text">Class: Human</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He 
+                    leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for 
+                    every plan.
+                    </p>
+                <p class="agent-biography-text">
+                    Chamber is a radianite tech user who makes use of a pair of custom firearms, nanotechnology, and personal 
+                    teleportation equipment. His general specialty is as both a weapons designer and as a marksman.
+                    </p>
+                <p class="agent-biography-text">With a blend of suave nonchalance, professional poise, and smug comedy, Chamber 
+                    is fully confident with the skill he provides and the value that he offers. He sets high standards for himself 
+                    and his team, reminding everyone that if they were to secure victories, they might as well go all-out and be 
+                    the best in what they do.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="resources/chamber/chamberportrait-removebg-preview.png" alt="Chamber" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">CHAMBER</h1>
+                    <p class="agent-portrait-role">Sentinel</p>  
+                    <img src="resources/role/sentinelLogo.png" alt="Sentinel Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="resources/chamber/chamberDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="resources/chamber/chamber-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/chamber/chamber-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/chamber/chamber-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/chamber/chamber-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

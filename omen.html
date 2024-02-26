@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: ???</h2>
+                <h2 class="agent-information-text">Country: ???</h2>
+                <h2 class="agent-information-text">Class: Radiant</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, 
+                    then lets paranoia take hold as his foe scrambles to learn where he might strike next.
+                    </p>
+                <p class="agent-biography-text">
+                    Following his accident, Omen has gained a ghostly and 'wraith-like' form, with powers relating to 
+                    teleportation and manipulating shadows. His new body, now empowered with his Radiance, is capable of 
+                    incredible feats - but also at the cost of losing a lot of his 'human' nature.
+                    </p>
+                <p class="agent-biography-text">Omen has a cynical and cheerless personality, complimented with a dark sense of 
+                    humor and a grim attitude. Omen has lost most, if not all, of his memories of his past self prior to the 
+                    accident, and one of his main goals as a character is to recover them.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="resources/omen/omenportrait-removebg-preview.png" alt="Omen" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">OMEN</h1>
+                    <p class="agent-portrait-role">Controller</p>  
+                    <img src="resources/role/controllerLogo.png" alt="Controller Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="resources/omen/omenDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="resources/omen/omen-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/omen/omen-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/omen/omen-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/omen/omen-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>E</p>
+                    <p>Q</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

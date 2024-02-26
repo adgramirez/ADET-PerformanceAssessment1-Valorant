@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: ???</h2>
+                <h2 class="agent-information-text">Country: ???</h2>
+                <h2 class="agent-information-text">Class: Cybernetic</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy 
+                    abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.
+                    </p>
+                <p class="agent-biography-text">
+                    KAY/O utilizes polarized Radianite to suppress his enemies in combat, disallowing the use of the opponents' 
+                    abilities. Using ZERO/POINT, KAY/O is able to throw a knife which sticks in its target and suppresses 
+                    those nearby. Additionally, KAY/O can utilize FLASH/DRIVE and FRAG/MENT, both grenade-like projectiles 
+                    stored in his arms, as a Flash and a Molly respectively. Lastly, his ultimate ability, NULL/CMD, overloads 
+                    his core with polarized radianite energy, causing him to emit large pulses of suppression.
+                    </p>
+                <p class="agent-biography-text">Though he is a robot, KAY/O is not particularly devoid of human emotion. He came 
+                    to Earth as a veteran who has seen the terrible spoils of war, and he fights determined so that a conflict of 
+                    similar proportions will not happen ever again. Given his affiliation in the Human-Radiant War, he has shown 
+                    to be more amiable towards his human teammates, while being wary around radiant allies.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="resources/kayo/kayoportrait-removebg-preview.png" alt="Kayo" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">KAY/O</h1>
+                    <p class="agent-portrait-role">Initiator</p>  
+                    <img src="resources/role/initiatorLogo.png" alt="Initiator Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="100%" autoplay loop controls>
+                        <source src="resources/kayo/kayoDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="resources/kayo/kayo-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/kayo/kayo-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/kayo/kayo-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="resources/kayo/kayo-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>
