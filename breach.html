@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: Erik Torsten</h2>
+                <h2 class="agent-information-text">Country: Sweden</h2>
+                <h2 class="agent-information-text">Class: Human</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through 
+                    enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.
+                    </p>
+                <p class="agent-biography-text">
+                    Breach is a congenital amputee with artificial arms built by himself, with Raze implementing some major 
+                    upgrades and custom work. Breach has implied his previous life was as a mercenary.
+                    </p>
+                <p class="agent-biography-text">If there's anyone who knows the risk - and the thrill - of their job as a 
+                    VALORANT agent best, it's probably Breach. This bionic man has hinted at having a long history of being 
+                    in the battlefield, and any shootout is always fun for him.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="initiator/breach/breachportrait-removebg-preview.png" alt="Breach" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">BREACH</h1>
+                    <p class="agent-portrait-role">Initiator</p>  
+                    <img src="role/initiatorLogo.png" alt="Initiator Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="initiator/breach/breachDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="initiator/breach/breach-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/breach/breach-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/breach/breach-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/breach/breach-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

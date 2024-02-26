@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: Klara Böhringer</h2>
+                <h2 class="agent-information-text">Country: Germany</h2>
+                <h2 class="agent-information-text">Class: Human</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the 
+                    damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.
+                    </p>
+                <p class="agent-biography-text">
+                    She uses her various inventions both inside and outside combat to her advantage. All of her abilities are 
+                    various pieces of highly advanced technology, that she uses on the battlefield to give her an edge. Killjoy 
+                    controls all her abilities with a holographic bracelet on her left arm, with which she is able to summon or 
+                    recall any of her bots.
+                    </p>
+                <p class="agent-biography-text">The focal point of Killjoy's personality is her incredible mind. She is without 
+                    doubt the smartest Agent in the PROTOCOL, a fact that she is very well aware of. This manifests itself in a 
+                    strong confidence in herself and her intelligence, not without a fair share of bragging. She is proud and 
+                    willful, with a high feeling of self-importance.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="sentinel/killjoy/killjoyportrait-removebg-preview.png" alt="Cypher" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">KILLJOY</h1>
+                    <p class="agent-portrait-role">Sentinel</p>  
+                    <img src="role/sentinelLogo.png" alt="Sentinel Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="sentinel/killjoy/killjoyDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="sentinel/killjoy/killjoy-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="sentinel/killjoy/killjoy-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="sentinel/killjoy/killjoy-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="sentinel/killjoy/killjoy-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

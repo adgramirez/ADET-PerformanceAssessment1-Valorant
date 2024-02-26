@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: 桐谷 諒 | Kiritani Ryo</h2>
+                <h2 class="agent-information-text">Country: Japan</h2>
+                <h2 class="agent-information-text">Class: Radiant</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression 
+                    in equal measure, he gets the drop on each target before they know where to look.
+                <p class="agent-biography-text">
+                    Yoru has Radiant powers that allow him to open small rifts in the fabric of reality, which he can then go through, or teleport through as he pleases. 
+                    His abilities delve into an otherwise-unexplored space of Radiant possibility, dimensional manipulation. He can use it to store items that he wishes to 
+                    and at need traverse into it himself.
+                    </p>
+                <p class="agent-biography-text">Yoru's personality is reminiscent of the "cool" teenagers depicted in Asian entertainment media. He is proud and arrogant, 
+                    clearly exhibited by his frequent bragging and supreme confidence in his own skills. Yoru also lays a heavy focus on his appearance, and has a butterfly 
+                    comb always close at hand to keep his hair perfectly styled.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="duelist/yoru/yoruportrait-removebg-preview.png" alt="Yoru" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">YORU</h1>
+                    <p class="agent-portrait-role">Duelist</p>  
+                    <img src="role/duelistLogo.png" alt="Duelist Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="duelist/yoru/yoruDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="duelist/yoru/yoru-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="duelist/yoru/yoru-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="duelist/yoru/yoru-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="duelist/yoru/yoru-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>

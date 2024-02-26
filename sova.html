@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="agent-details-title">Agent Profile</title>
+    <link rel="stylesheet" href="valorantStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Agent Profile</h1>
+        <nav>
+            <ul>
+                <p><a href="index.html" class="back-to-agents">Back to Agents</a></p>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agent-details">
+        <div class="grid-container">
+            <div class="agent-details-column">          
+                <h1 class="agent-heading1">// PERSONAL PROFILE</h1>
+                <h2 class="agent-information-text">Name: Саша Новиков | Sasha Novikov</h2>
+                <h2 class="agent-information-text">Country: Russia</h2>
+                <h2 class="agent-information-text">Class: Human</h2>
+                <h1 class="agent-heading1">// BIOGRAPHY</h1>   
+                <p class="agent-biography-text">
+                    Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with 
+                    ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that 
+                    even if you run, you cannot hide.
+                    </p>
+                <p class="agent-biography-text">
+                    Sova, hailing from the cold tundra of Russia, combines his unmatched archery skills with Radianite 
+                    technology to defeat his enemies.
+                    </p>
+                <p class="agent-biography-text">Sova has a very calm and level-headed personality. Although he is 
+                    incredibly dedicated and ruthless towards the enemies, he is warm towards his teammates, 
+                    always encouraging and complimenting them. He believes in himself and he believes in his team to win. 
+                    His steadiness and tirelessness on the field is most likely an asset to the morale of the team. 
+                    He is here to protect his Earth; one can only assume that his experience with the rifts drives this 
+                    desire.
+                    </p>
+            </div>
+
+            <div class="agent-portrait-column">
+                <img src="initiator/sova/sovaportrait-removebg-preview.png" alt="Sova" class="agent-image">
+                <div>
+                    <h1 class="agent-codename">SOvA</h1>
+                    <p class="agent-portrait-role">Initiator</p>  
+                    <img src="role/initiatorLogo.png" alt="Initiator Icon" class="portrait-role-icon">                          
+                </div>  
+            </div>
+
+            <div class="agent-abilities-column">
+                <h2 class="agent-heading1">// ABILITIES</h2>
+                <div class="ability-video">
+                    <video id="abilityVideo" width="100%" height="auto" autoplay loop controls>
+                        <source src="initiator/sova/sovaDefault-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="ability-buttons">
+                    <div class="ability-button">
+                        <img src="initiator/sova/sova-ability1.png" alt="Ability 1" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/sova/sova-ability2.png" alt="Ability 2" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/sova/sova-ability3.png" alt="Ability 3" class="agent-ability-icon">
+                    </div>
+                    <div class="ability-button">
+                        <img src="initiator/sova/sova-abilityUltimate.png" alt="Ultimate" class="agent-ability-icon">
+                    </div>
+                </div>
+                <div class="ability-keybinds">
+                    <p>C</p>
+                    <p>Q</p>
+                    <p>E</p>
+                    <p>X</p>
+                </div>
+                <div class="ability-names" id="abilityName"></div>
+                <div class="ability-description" id="abilityDescription"></div>
+            </div>
+    </section>
+    <script src="valorantScript.js"></script>
+</body>
+</html>
